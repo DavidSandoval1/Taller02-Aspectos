@@ -43,6 +43,7 @@ public class PetStore {
              UpdateLevel();
         break;
         case 4:
+        	System.exit(0);
         break;
         default:
             System.out.println("Incorrect option");
