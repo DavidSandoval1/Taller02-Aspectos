@@ -7,4 +7,8 @@ public aspect CheckAsurrance {
 		String petName = PetStore.readConsole("Verifying assurance...\nName of your pet: ");
 		System.out.println("Welcome "+petName+"\nYou are able to use this service");
 	}
+	
+	after(): verifyAssurance(){
+		System.out.println("Request was executed succesfully");
+	}
 }
